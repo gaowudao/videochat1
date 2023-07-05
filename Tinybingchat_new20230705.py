@@ -371,7 +371,7 @@ with st.expander("Conversation", expanded=True):
         #play_local_audio("results/response.mp3")
         #autoplay_audio("C:/Users/Administrator/Desktop/TTS-dev/results/response1.mp3")
 
-        audio_file = open("E:/TTS-dev/results/response1.mp3",'rb') #enter the filename with filepath
+        audio_file = open("response.mp3",'rb') #enter the filename with filepath
 
         audio_bytes = audio_file.read() #reading the file
 
