@@ -54,7 +54,7 @@ import subprocess
 import sys
 
 os.environ['_BARD_API_KEY']="WQjcW2wbcn5TYExLR6G5MhPm0B3g1YGfAJsrpXwRi1aKwsPpKOy6UIkgy6okANQ4dM-d_w."
-openai.api_key = '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' #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
+
 
 #st.set_page_config(page_title='🤖Tiny chatbot powered by GPT4', layout='wide')
 
