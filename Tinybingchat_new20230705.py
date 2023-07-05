@@ -96,7 +96,7 @@ torch.backends.cudnn.benchmark = True
 
 netNetwork = m2m.M2M_PWC().cuda().eval()
 
-netNetwork.load_state_dict(torch.load('/content/drive/MyDrive/model/model.pkl'))
+netNetwork.load_state_dict(torch.load('/kaggle/working/videochat1/model.pkl'))
 
 ##########################################################
 
