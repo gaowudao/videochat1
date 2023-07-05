@@ -308,12 +308,12 @@ def main():
         prompt = output
         result = pipe(prompt=prompt, video_length = 8, num_inference_steps = 40, t0 = 34,t1 = 37,negative_prompt = 'longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality').images
         result = [(r * 255).astype("uint8") for r in result]
-        imageio.mimsave("/content/drive/MyDrive/model/video.mp4", result, fps=4)
+        imageio.mimsave("video.mp4", result, fps=4)
 
 
         TEXT = output
         VOICE = "en-GB-SoniaNeural"
-        OUTPUT_FILE = "/content/drive/MyDrive/model/response.mp3"
+        OUTPUT_FILE = "response.mp3"
 
         
         asyncio.run(text_to_speech_edge(TEXT, VOICE, OUTPUT_FILE))
@@ -323,13 +323,13 @@ def main():
 
         subprocess.run([f"{sys.executable}", "main.py"])
 
-        autoplay_audio("/content/drive/MyDrive/model/response.mp3")
+        autoplay_audio("response.mp3")
 
         # newduration = TinyTag.get('E:/TTS-dev/results/result_voice.mp4').duration
         # original_video = "E:/TTS-dev/images/video1.mp4"
 
         with st.sidebar:
-            sideplayvideo = playvideoloop('/content/drive/MyDrive/model/output.mp4')
+            sideplayvideo = playvideoloop('output.mp4')
             # time.sleep(newduration+1)
             # sideplayvideo.empty()
             # sidebar_video1 = playvideoloop(original_video)
