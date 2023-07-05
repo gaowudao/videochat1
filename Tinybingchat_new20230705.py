@@ -58,7 +58,7 @@ import argparse
 import ffmpeg
 import numpy
 import torch
-import model2.m2m as m2m
+import model.m2m as m2m
 
 
 os.environ['_BARD_API_KEY']="WQjcW2wbcn5TYExLR6G5MhPm0B3g1YGfAJsrpXwRi1aKwsPpKOy6UIkgy6okANQ4dM-d_w."
